@@ -63,4 +63,32 @@ database = "YOUR_DB"
 schema = "YOUR_SCHEMA"
 
 #4. Run the app
-streamlit run app.py
+streamlit run app.py  
+```
+
+
+## Screenshots
+# Select Data Source
+![Filter UI](assets/source_section.png)
+
+# Data Preview
+![Filter UI](assets/data_preview_section.png)
+
+# Global Extract Filter
+![Filter UI](assets/global_extract_filter_section.png)
+
+# Simple Rule Section
+![Filter UI](assets/simple_rule_section.png)
+
+# Complex Rule Section
+![Filter UI](assets/complex_rule_section.png)
+
+# SQL Result Section
+![Filter UI](assets/sql_result_section.png)
+
+
+
+
+
+
+
