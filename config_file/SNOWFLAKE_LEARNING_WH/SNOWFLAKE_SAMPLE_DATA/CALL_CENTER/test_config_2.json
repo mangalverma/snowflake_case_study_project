@@ -1,0 +1,1 @@
+{"name": "test_config_2", "rules": {"simple_rules": [], "complex_rules": []}, "filters": [{"type": "WHERE", "condition": "=", "value": "large", "column": "CC_CLASS", "case_sensitive": false, "combine_with_next": "AND", "applied": true}]}
