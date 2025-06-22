@@ -67,23 +67,23 @@ streamlit run app.py
 ```
 
 
-## Screenshots
-# Select Data Source
+# Screenshots
+## Select Data Source
 ![Filter UI](assets/source_section.png)
 
-# Data Preview
+## Data Preview
 ![Filter UI](assets/data_preview_section.png)
 
-# Global Extract Filter
+## Global Extract Filter
 ![Filter UI](assets/global_extract_filter_section.png)
 
-# Simple Rule Section
+## Simple Rule Section
 ![Filter UI](assets/simple_rule_section.png)
 
-# Complex Rule Section
+## Complex Rule Section
 ![Filter UI](assets/complex_rule_section.png)
 
-# SQL Result Section
+## SQL Result Section
 ![Filter UI](assets/sql_result_section.png)
 
 
