@@ -55,21 +55,21 @@ if is_config_exist and selected_config:
 
 else:
     st.session_state.selected_config = {'name':selected_config,'filters': [],'filter_loaded':False}
-print(st.session_state)
+# print(st.session_state)
 
 
-print("selected_config",selected_config)
+# print("selected_config",selected_config)
 filters = render_filter_section(conn, selected_source, selected_config)
-print("Filters")
-print(filters)
+# print("Filters")
+# print(filters)
 
 # --- Rule Engine Section ---
 st.header("Attribute Rules (CASE-WHEN)")
 rules = render_rule_section(conn,selected_source,config_name=selected_config,
                             simple_config=config_details[selected_config]["rules"].get("simple_rules", []),
                             complex_config=config_details[selected_config]["rules"].get("complex_rules", []))
-print("Rules")
-print(rules)
+# print("Rules")
+# print(rules)
 
 sql = generate_sql(selected_source, get_columns(conn, selected_source), filters, rules)
 # --- SQL Preview ---
