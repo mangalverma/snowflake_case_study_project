@@ -65,9 +65,10 @@ filters = render_filter_section(conn, selected_source, selected_config)
 
 # --- Rule Engine Section ---
 st.header("Attribute Rules (CASE-WHEN)")
+default_rules = {'rules':{'simple_rules':[],'complex_rules':[]}}
 rules = render_rule_section(conn,selected_source,config_name=selected_config,
-                            simple_config=config_details[selected_config]["rules"].get("simple_rules", []),
-                            complex_config=config_details[selected_config]["rules"].get("complex_rules", []))
+                            simple_config=config_details.get(selected_config,default_rules)["rules"].get("simple_rules", []),
+                            complex_config=config_details.get(selected_config,default_rules)["rules"].get("complex_rules", []))
 # print("Rules")
 # print(rules)
 

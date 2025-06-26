@@ -48,14 +48,16 @@ def save_configuration(table_view,config_data,input_config_data):
         version_num = 0
         version_str = config_data['name'].split("_")[-1]
         if version_str.startswith("v"):
-            version_num = versios_str.replace("v","")
+            version_num = version_str.replace("v","")
             try:
                 version_num = int(version_num)
             except Exception as e:
                 print(e)
+            version_num+=1
             view_name = "_".join(config_data['name'].split("_")[:-1])+f"_v{version_num}"
         else:
             view_name = f"{config_data['name']}_v0"
+        config_data['name'] = view_name
         config_filename = view_name + ".json"
         config_file_path = os.path.join(table_dir,config_filename)
         with open(config_file_path,'w+') as f:
